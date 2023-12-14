@@ -25,8 +25,8 @@ print("before adding key 6 to d1",d1)
 d1.update({6:"manju"})
 print("after adding key 6 to d1",d1)
 print("before adding key 2 to d1",d1)
-d1.update({2:"india"})
-print("after adding key 2 to d1",d1)
+d1.update({7:"india"})
+print("after adding key 7 to d1",d1)
 
 #accessing the values from the dictionary
 print("d1.get(6)",d1.get(6))
@@ -35,5 +35,7 @@ print("d1.pop(1)",d1.pop(1))
 print("after pop dictionary d1",d1)
 print("d1.popitem",d1.popitem)
 print("after popitem dictionary d1",d1)
+d5={'fruits':['mango','banana','orange,guava'],'num'[1,2,7,8,9],'vegetables'['potato','beans'],'name'['ram','shyam','malli']}
+print('type of fruits data',type(d5.get('fruits')))
 
 
