@@ -35,7 +35,7 @@ print("d1.pop(1)",d1.pop(1))
 print("after pop dictionary d1",d1)
 print("d1.popitem",d1.popitem)
 print("after popitem dictionary d1",d1)
-d5={'fruits':['mango','banana','orange,guava'],'num'[1,2,7,8,9],'vegetables'['potato','beans'],'name'['ram','shyam','malli']}
+d5={'fruits':['mango','banana','orange','guava'],'int'[1,2,7,8,9],'vegetables'['potato','beans'],'name'['ram','shyam','malli']}
 print('type of fruits data',type(d5.get('fruits')))
 
 
