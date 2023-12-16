@@ -20,7 +20,7 @@ from pyspark.sql.functions import explode_outer, concat, col, \
 #Spark session creation
 spark = SparkSession.builder \
     .master("local") \
-    .config("spark.jars", '/Users/harish/Downloads/spark-3.4.1-bin-hadoop3/jars/hadoop-azure-3.3.6.jar') \
+    .config("spark.jars", 'jars/hadoop-azure-3.3.6.jar') \
     .getOrCreate()
 
 with open('Config/config.json','r') as f:

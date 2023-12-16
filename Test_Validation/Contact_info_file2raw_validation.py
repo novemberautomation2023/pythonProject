@@ -22,7 +22,7 @@ spark = SparkSession.builder \
     .config("spark.jars", '/Users/harish/Downloads/spark-3.4.1-bin-hadoop3/jars/hadoop-azure-3.3.6.jar') \
     .getOrCreate()
 
-with open('/Users/harish/PycharmProjects/Data_validation_tool/Config/config.json','r') as f:
+with open('Config/config.json','r') as f:
     config_file_data = json.loads(f.read())
 
 print(config_file_data['contact_info'])
