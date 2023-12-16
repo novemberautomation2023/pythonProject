@@ -10,6 +10,12 @@ on:
           - qa
           - prod
         description: Deployment environment
+      space:
+        type: choice
+        options:
+          - synthetic
+          - actual
+        description: Deployment environment
 jobs:
   # This workflow contains a single job called "build"
   build:
