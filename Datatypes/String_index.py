@@ -56,7 +56,7 @@ print("str[2:10:4]", str[2:10:4])
 
 print("str[0:100:1]", str[0:100:1])
 
-print("str[100]",str[100])
+#print("str[100]",str[100])
 
 
 
