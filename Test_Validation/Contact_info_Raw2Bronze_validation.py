@@ -23,7 +23,7 @@ spark = SparkSession.builder \
     .config("spark.jars", '/Users/harish/Downloads/spark-3.4.1-bin-hadoop3/jars/hadoop-azure-3.3.6.jar') \
     .getOrCreate()
 
-with open('/Users/harish/PycharmProjects/Data_validation_tool/Config/config.json','r') as f:
+with open('Config/config.json','r') as f:
     config_file_data = json.loads(f.read())
 
 Out = {"TC_ID":[], "test_Case_Name":[], "Number_of_source_Records":[], "Number_of_target_Records":[], "Number_of_failed_Records":[],"Status":[]}
@@ -88,7 +88,7 @@ Summary = pd.DataFrame(Out)
 
 Summary = spark.createDataFrame(Summary)
 Summary.show()
-Summary.write.csv("/Users/harish/PycharmProjects/Data_validation_tool/Output/Summary", mode='overwrite', header="True")
+Summary.write.csv("Output/Summary", mode='overwrite', header="True")
 
 Summary.write.mode("overwrite") \
     .format("jdbc") \
