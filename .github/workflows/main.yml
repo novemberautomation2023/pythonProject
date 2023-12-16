@@ -1,4 +1,4 @@
-ame: QA validation workflow deployment
+name: QA validation workflow deployment
 
 on:
   workflow_dispatch:

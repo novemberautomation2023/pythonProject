@@ -1,8 +1,0 @@
-name: QA validation job
-
-on:
-  workflow_call:
-    input:
-      environment:
-        type: string
-        required :true
