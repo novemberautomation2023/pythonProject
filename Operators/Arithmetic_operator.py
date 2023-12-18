@@ -1,4 +1,4 @@
-'''This file created to practice range DT
+'''This file created to practice Arithmetic operator
 Author - Sreeni added date:14/Dec/2023 '''
 
 a = 10
