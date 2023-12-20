@@ -18,7 +18,7 @@ print("Key available in d2 ", d2.keys())
 print("values available in d2 ", d2.values())
 print("Keys and values available in d2 ", d2.items())
 
-d2 = {1:"sreeni", 2:"ramesh", 1:"Ram", 3:"ramesh"}
+d2 = {1:"sreeni", 2:"ramesh", 1:"Ram", 3:"ramesh"}#if you give more than one key value pairs, it will always take the latestpair
 print(" Dictionary d2 values", d2)
 
 # Adding new values and update existing values
@@ -117,9 +117,9 @@ print("Type of fruits data",type(d4.get("fruits")))
 # d4.pop("fruits")
 # print(" after pop d4",d4)
 
-import pandas as pd
-df = pd.DataFrame(d4)
-print(df)
+# import pandas as pd
+# df = pd.DataFrame(d4)
+# print(df)
 
 #New line from sreeni
 
