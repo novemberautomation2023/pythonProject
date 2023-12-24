@@ -16,6 +16,5 @@ def count_val(sourcedf, targetdf):
 
 count_val(source, target)
 
-Function is set of lines code which will do specific activity
-and it gradually reduce redudancy of code
+
 
