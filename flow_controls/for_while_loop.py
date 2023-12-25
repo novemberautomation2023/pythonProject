@@ -86,8 +86,30 @@ Author - Sreeni added date:20/Dec/2023 '''
 #         continue
 #     print(i)
 
-for i in range(1,10):
-    pass
+# for i in range(1,10):
+#     pass
 
-def sum(a,b):
-    pass
+# def sum(a,b):
+#     pass
+
+# for i in range(1,11):
+#     print(i)
+
+#while condition:
+#    stmt1
+#    stm2
+
+# n=10
+# while n > 0: #name=='Sreeni
+#     print(n)
+#     n -= 1
+
+n=0
+while n <= 10: #name=='Sreeni
+    print(n)
+    n += 1
+
+# while True:
+#     print(1)
+
+
