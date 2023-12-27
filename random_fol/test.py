@@ -1,7 +1,8 @@
 import pandas as pd
 
-source = pd.read_csv(r'/Users/harish/Downloads/archive (7)/portfolio.csv')
-target = pd.read_csv(r'/Users/harish/Downloads/archive (7)/portfolio.csv')
+from Functions.functions_patt1 import factorial2,result2
+source = pd.read_csv(r'/Users/harish/Desktop/ETL Automation/Contact_info.csv')
+target = pd.read_csv(r'/Users/harish/Desktop/ETL Automation/Contact_info_t.csv')
 
 print(source.columns)
 print(source.shape[0])
@@ -17,7 +18,13 @@ def count_val(sourcedf, targetdf):
 
 count_val(source, target)
 
-source.grou
+def data_val(sourcedf, targetdf):
+    print(sourcedf.compare(targetdf))
+
+data_val(source, target)
+
+
+
 
 
 
