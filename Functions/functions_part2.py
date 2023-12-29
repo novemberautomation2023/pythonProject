@@ -55,24 +55,40 @@ Author - Sreeni added date:26/Dec/2023 '''
 # cal(10,20,30)
 
 
-def cal(s1,*n):
-    #print(type(n))
-    #print(n)
+def cal(*args):
+    print(type(args))
+    print(args)
     sum = 0
-    sub = n[0]
     mul = 1
-    for i in n:
+    for i in args:
         sum = sum+i
         mul = mul * i
-        sub = sub - i
-    print(f"The sum of {n} values is", sum)
-    print(f"The mul of {n} values is", mul)
+    print(f"The sum of {args} values is", sum)
+    print(f"The mul of {args} values is", mul)
 
 cal(10,20.0)
 cal(10,20)
 cal(10,20,33)
 cal(10,20,33,55,76,99)
 cal(10,2)
+
+def cal2(**kwargs):
+    #print(type(args))
+    #print(args)
+    #print("args.get('a')",args.get('a'))
+    sum = 0
+
+    for value in kwargs.values():
+        sum = sum+value
+
+    # for key, value in kwargs.items():
+    #     sum = sum + value
+    print(f"Sum of {kwargs.values()}", sum)
+
+cal2(a=10,b=20,c=30,d=40,e=400,f=200)
+
+cal2(k=100,l=120,m=130,n=140,o=4,p=2)
+
 
 
 
