@@ -1,0 +1,60 @@
+2023-12-29 07:24:20,538:INFO:this is info
+2023-12-29 07:24:20,538:WARNING:this is warning
+2023-12-29 07:24:20,538:ERROR:this is error
+2023-12-29 07:24:20,538:CRITICAL:this is critical
+2023-12-29 07:24:20,542:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:26:49,103:INFO:this is info
+2023-12-29 07:26:49,103:WARNING:this is warning
+2023-12-29 07:26:49,103:ERROR:this is error
+2023-12-29 07:26:49,103:CRITICAL:this is critical
+2023-12-29 07:26:49,109:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:49:28,519:INFO:this is info
+2023-12-29 07:49:28,519:WARNING:this is warning
+2023-12-29 07:49:28,520:ERROR:this is error
+2023-12-29 07:49:28,520:CRITICAL:this is critical
+2023-12-29 07:49:28,526:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:50:11,255:INFO:this is info
+2023-12-29 07:50:11,255:WARNING:this is warning
+2023-12-29 07:50:11,255:ERROR:this is error
+2023-12-29 07:50:11,256:CRITICAL:this is critical
+2023-12-29 07:50:11,260:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:50:35,291:INFO:this is info
+2023-12-29 07:50:35,291:WARNING:this is warning
+2023-12-29 07:50:35,291:ERROR:this is error
+2023-12-29 07:50:35,291:CRITICAL:this is critical
+2023-12-29 07:50:35,296:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:50:41,349:INFO:this is info
+2023-12-29 07:50:41,349:WARNING:this is warning
+2023-12-29 07:50:41,349:ERROR:this is error
+2023-12-29 07:50:41,350:CRITICAL:this is critical
+2023-12-29 07:50:41,355:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:50:52,782:INFO:this is info
+2023-12-29 07:50:52,783:WARNING:this is warning
+2023-12-29 07:50:52,783:ERROR:this is error
+2023-12-29 07:50:52,783:CRITICAL:this is critical
+2023-12-29 07:50:52,788:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:52:19,603:INFO:this is info
+2023-12-29 07:52:19,603:WARNING:this is warning
+2023-12-29 07:52:19,605:ERROR:this is error
+2023-12-29 07:52:19,605:CRITICAL:this is critical
+2023-12-29 07:52:19,613:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:52:46,030:INFO:this is info
+2023-12-29 07:52:46,030:WARNING:this is warning
+2023-12-29 07:52:46,030:ERROR:this is error
+2023-12-29 07:52:46,030:CRITICAL:this is critical
+2023-12-29 07:52:46,036:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:53:43,025:INFO:this is info
+2023-12-29 07:53:43,026:WARNING:this is warning
+2023-12-29 07:53:43,026:ERROR:this is error
+2023-12-29 07:53:43,026:CRITICAL:this is critical
+2023-12-29 07:53:43,032:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 07:54:09,210:INFO:this is info
+2023-12-29 07:54:09,210:WARNING:this is warning
+2023-12-29 07:54:09,210:ERROR:this is error
+2023-12-29 07:54:09,211:CRITICAL:this is critical
+2023-12-29 07:54:09,216:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully
+2023-12-29 08:19:03,020:INFO:this is info
+2023-12-29 08:19:03,022:WARNING:this is warning
+2023-12-29 08:19:03,022:ERROR:this is error
+2023-12-29 08:19:03,023:CRITICAL:this is critical
+2023-12-29 08:19:03,042:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully

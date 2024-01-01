@@ -1,5 +1,5 @@
 '''This file created to practice functions
-Author - Sreeni added date:26/Dec/2023 '''
+Author - Sreeni added date:29/Dec/2023 '''
 
 #Levels of logging
 #
