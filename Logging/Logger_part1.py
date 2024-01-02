@@ -56,7 +56,7 @@ def read_file(path, file_type):
         logging.critical("File is not present")
         #df =  df = pd.read_csv(path)
 
-df = read_file("/Users/harish/PycharmProjects/pythonProject/source_files/Contact_info.csv","csv")
+df = read_file("/Users/harish/PycharmProjects/pythonProject/source_files/Contact_info1.csv","csv")
 print(df.head(2))
 
 df2 = read_file("/Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv","csv")
