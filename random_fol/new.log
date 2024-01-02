@@ -1,0 +1,5 @@
+2023-12-29 07:23:06,578:INFO:this is info
+2023-12-29 07:23:06,578:WARNING:this is warning
+2023-12-29 07:23:06,578:ERROR:this is error
+2023-12-29 07:23:06,579:CRITICAL:this is critical
+2023-12-29 07:23:06,584:INFO:file /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv read successfully

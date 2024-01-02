@@ -1,0 +1,2 @@
+2023-12-29 09:23:25,032:INFO:CSV file read successfully /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info.csv and rows read is 10
+2023-12-29 09:23:25,080:INFO:CSV file read successfully /Users/harish/PycharmProjects/pythonProject/source_files/Contact_info_t.csv and rows read is 10
