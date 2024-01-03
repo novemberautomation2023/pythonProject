@@ -1,17 +1,32 @@
-# a = int(input("enter a value:"))
-#
-# b = int(input("enter b value:"))
+class calculator:
+    """This is calculator function"""
+    def __init__(self):
+        self.a = 100
+        self.b = 200
+        print(id(self))
+        print("This is constructor")
+    def add(self):
+        return self.a+self.b
+    def sub(self):
+        return self.a-self.b
+    def mul(self):
+        return self.a*self.b
+    def div(self):
+        return  self.a/self.b
 
-try:
-    print(100/0)
-except ZeroDivisionError as msg:
-    print("Enter correct a and b value")
-except TypeError:
-    print("this is type error")
-except:
-    print("this is default except block")
-finally:
-    print("finally")
+obj = calculator()
+print(id(obj))
 
+print(obj.add())
+print(obj.sub())
+print(obj.mul())
+print(obj.div())
 
+str ='Sreeni'
+obj.c=100
+calculator.d=1000
+
+print(calculator.__dict__)
+
+help(calculator)
 
