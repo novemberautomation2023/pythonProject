@@ -34,9 +34,3 @@ except:
 finally:
     print("This is finally block")
 
-#
-for i in range(1,10):
-    print(i*i)
-
-for i in range(11, 20):
-    print(i * i)
