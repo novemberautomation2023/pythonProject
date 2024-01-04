@@ -18,9 +18,9 @@ Author - Sreeni added date:03/Jan/2024 '''
 
 class Calculator:
     """this class is created to do some arithmetic calculations"""
-    def __init__(kelf):
+    def __init__(self):
         print("Inside constructor")
-        print("Id of self is ", id(kelf))
+        print("Id of self is ", id(self))
     def add(self,a,b): # instance method
         return a+b
     def sub(self,a,b): # instance method
@@ -97,13 +97,19 @@ class count_val:
         self.sourcedf= sourcedf
         self.targetdf= targetdf
 
-    def count_val(self):
-        src_cnt= self.sourcedf.count()
-        tgt_cnt = self.targetdf.count()
+    def count_validation(self):
+        src_cnt= self.sourcedf
+        tgt_cnt = self.targetdf
         if src_cnt == tgt_cnt:
             print("Count is matching")
         else:
             print("count is not matching")
+
+
+
+
+
+
 
 
 

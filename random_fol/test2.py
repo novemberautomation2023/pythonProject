@@ -1,32 +1,28 @@
-class calculator:
+class College:
+    college_name='SVCE'
     """This is calculator function"""
-    def __init__(self):
-        self.a = 100
-        self.b = 200
-        print(id(self))
-        print("This is constructor")
-    def add(self):
-        return self.a+self.b
-    def sub(self):
-        return self.a-self.b
-    def mul(self):
-        return self.a*self.b
-    def div(self):
-        return  self.a/self.b
+    def __init__(self,id,name,marks):
+        self.id=id
+        self.name=name
+        self.marks=marks
+        College.principle='DR. Ramachandra'
 
-obj = calculator()
-print(id(obj))
+    def student_info(self):
+        College.dept='XYZ'
+        print(f"student id is {self.id}, name is {self.name},"
+              f" marks are {self.marks}", {self.college_name},
+              self.principle , self.dept)
+    @classmethod
+    def college_info(cls):
+        print(f"college name is {cls.college_name}")
 
-print(obj.add())
-print(obj.sub())
-print(obj.mul())
-print(obj.div())
 
-str ='Sreeni'
-obj.c=100
-calculator.d=1000
 
-print(calculator.__dict__)
 
-help(calculator)
+obj = College(1,'sreeni',75)
+
+print(obj.student_info())
+
+
+
 
