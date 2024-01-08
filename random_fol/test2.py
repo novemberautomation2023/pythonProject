@@ -1,28 +1,34 @@
-class College:
-    college_name='SVCE'
-    """This is calculator function"""
-    def __init__(self,id,name,marks):
-        self.id=id
+import sys
+class Customer:
+    ''''' Customer class with bank operations.. '''
+    bankname='ETLAUTO'
+    def __init__(self,name,balance=0.0):
         self.name=name
-        self.marks=marks
-        College.principle='DR. Ramachandra'
+        self.balance=balance
+    def deposit(self,amt):
+        self.balance=self.balance+amt
+        print('Balance after deposit:',self.balance)
+    def withdraw(self,amt):
+        if amt>self.balance:
+            print('Insufficient Funds..cannot perform this operation')
+            sys.exit()
+        self.balance=self.balance-amt
+        print('Balance after withdraw:',self.balance)
+print('Welcome to',Customer.bankname)
 
-    def student_info(self):
-        College.dept='XYZ'
-        print(f"student id is {self.id}, name is {self.name},"
-              f" marks are {self.marks}", {self.college_name},
-              self.principle , self.dept)
-    @classmethod
-    def college_info(cls):
-        print(f"college name is {cls.college_name}")
-
-
-
-
-obj = College(1,'sreeni',75)
-
-print(obj.student_info())
-
-
-
-
+name=input('Enter Your Name:')
+c=Customer(name)
+while True:
+    print('d-Deposit \nw-Withdraw \ne-exit')
+    option=input('Choose your option:')
+    if option=='d' or option=='D':
+        amt=float(input('Enter amount:'))
+        c.deposit(amt)
+    elif option=='w' or option=='W':
+        amt=float(input('Enter amount:'))
+        c.withdraw(amt)
+    elif option=='e' or option=='E':
+        print('Thanks for Banking')
+        sys.exit()
+    else:
+        print('Invalid option..Plz choose valid option')
