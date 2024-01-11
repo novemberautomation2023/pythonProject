@@ -1,8 +1,8 @@
 from pyspark.sql import SparkSession
-#from pyspark.sql.connect.functions import col
 from pyspark.sql.functions import upper,col
 
-spark = SparkSession.builder.master("local[1]").appName("test").getOrCreate()
+spark = (SparkSession.builder.\
+         appName("dataframe").getOrCreate())
 
 #print(dir(spark))
 # spark = SparkSession.builder \
