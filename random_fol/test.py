@@ -1,51 +1,59 @@
-# import pandas as pd
-#
-# from Functions.functions_patt1 import factorial2,result2
-# source = pd.read_csv(r'/Users/harish/Desktop/ETL Automation/Contact_info.csv')
-# target = pd.read_csv(r'/Users/harish/Desktop/ETL Automation/Contact_info_t.csv')
-#
-# print(source.head(2))
-# print(source.columns)
-# print(source.shape[0])
-# print(source.shape[1])
-#
-# print(target.columns)
-# print(target.shape[0])
-# print(target.shape[1])
-# #
-# def count_val(sourcedf,targetdf):
-#     source_cnt = source.shape[0]
-#     target_cnt =  target.shape[0]
-#     if source_cnt == target_cnt:
-#         print("Count is matching")
-#     else:
-#         print("Count is not matching and difference is", source_cnt-target_cnt)
-#     return source_cnt,target_cnt
-#
-# src_cnt,tgt_cnt = count_val(sourcedf= source, targetdf = target)
-# print("#"*30)
-# print(src_cnt)
-# print(tgt_cnt)
-#
-#
-# print("#"*30)
-# def data_val(sourcedf, targetdf):
-#     print(sourcedf.compare(targetdf))
-#
-# data_val(source, target)
-# #
-# #
-#
-#
-#
-#
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import lit
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 
-def outer_fun(a, b):
-    def inner_fun(c, d):
-        return c + d
-    return inner_fun(a, b), a*b
+spark = SparkSession.builder \
+      .master("local[*]") \
+      .appName("test") \
+      .getOrCreate()
+
+data1 = [(1,'Sreeni'),(2,'Raghav'),(3,"hari")]
+#schema2 = ['id','name'] # Check on how to pass datatype
+schema2 = 'id integer, name string'
+df = spark.createDataFrame(data=data1,schema=schema2)
+#Source = spark.createDataFrame([(111,'Sreeni'),(222,'ABC')],['Sno','TestName'])
+
+df.show()
+
+df.printSchema()
+
+print(dir(spark))
+
+print("before", id(df))
+
+df = df.withColumn("test",lit('test'))
+
+print("after",id(df))
+
+data2 = [{'id':1, 'name':'Raghav'}, {'id':2, 'name':'Ram'}]
+
+schema = ['id','name']
+
+df2 = spark.createDataFrame(data=data2,schema=schema)
+
+df2.show()
+
+df2.createTempView("so")
+
+spark.sql("select * from so").show()
+
+data = [(1,"sreeni", 20), (2, "ram", 21), (3, "raghav", 22)]
+
+schema = StructType([
+    StructField("id",IntegerType(),True),
+    StructField("name",StringType(),True),
+    StructField("age",IntegerType(), True)]
+)
+
+df3 = spark.createDataFrame(data=data,schema=schema)
+
+df3.show()
+print(df3.rdd.getNumPartitions())
+print(df.count())
+print(df3.describe('name'))
+print(df.columns)
+print(df.schema.json())
 
 
 
-result = outer_fun(5, 10)
-print(result)
+#http://localhost:4040
