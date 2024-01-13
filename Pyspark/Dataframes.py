@@ -38,6 +38,8 @@ df2 = spark.sql('''select upper(a.language) as language, Salary, exp,year from d
 
 df2.show()
 
+df2.write.mode("append").csv("/Users/harish/PycharmProjects/pythonProject/source_files/out")
+
 
 
 

@@ -36,4 +36,9 @@ print("after updating2")
 df2.show()
 print(id(df2))
 
+data= [(1.2,2),(3.2,'4')]
+schema = ['id1', 'id2']
+
+spark.createDataFrame(data=data, schema=schema).printSchema()
+
 

@@ -8,6 +8,9 @@ spark = SparkSession.builder.master("local[1]").appName("test").getOrCreate()
 
 df = spark.read.format('csv').load("/Users/harish/PycharmProjects/pythonProject/source_files/Contact_info.csv")
 
+print(df.schema.json())
+
+
 
 (spark.read.format('csv').option("header",True).option("delimiter",",").\
  load("/Users/harish/PycharmProjects/pythonProject/source_files/*.csv")).show()
