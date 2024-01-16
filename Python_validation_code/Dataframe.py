@@ -13,8 +13,8 @@ target = pd.read_csv("/Users/harish/PycharmProjects/pythonProject/source_files/C
 
 def count_val(source, target):
     src_cnt = sqldf("select count(*) count1 from source")
-    #src_cnt = source.shape[0]
-    #tgt_cnt = target.shape[0]
+    src_cnt = source.shape[0]
+    tgt_cnt = target.shape[0]
     tgt_cnt = sqldf("select count(*) count1 from target")
     if list(src_cnt.count1) == list(tgt_cnt.count1):
         print("matching")
@@ -28,12 +28,12 @@ def Column_value_val(source, target):
     print(Mismatch_S_T)
     print("Mismatch records between target and source")
     print(Mismatch_T_S)
-    source
+    source.compare(target)
 
 Column_value_val(source, target )
 
-def duplicate(target, key_colum ):
-    duplicate = sqldf(f'''select key_column, count(*)  from target"
+def duplicate(target, key_column ):
+    duplicate = sqldf(f'''select {key_column}, count(*)  from target"
                        group by key_column having count(*)>1''')
     if duplicate.shape[0]>0:
         print("duplicates")
