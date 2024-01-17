@@ -58,7 +58,7 @@ print(pd.concat([df6,df7],axis=1,join='outer'))
 print("Merge")
 print(df6)
 print(df7)
-print(pd.merge(df6,df7, on='cust', how='outer'))
+print(pd.merge(df6,df7, on='cust', how='outer').prod_code_x)
 
 
 df8 = pd.read_csv(r"/Users/harish/PycharmProjects/pythonProject/source_files/Contact_info.csv")
@@ -81,7 +81,15 @@ df8 = pd.read_csv(r"/Users/harish/PycharmProjects/pythonProject/source_files/Con
 
 profile = ProfileReport(df8)
 #print(profile.to_notebook_iframe())
+
+import os
+print(os.getcwd())
+
 profile.to_html()
+
+profile.to_file(r"/Users/harish/PycharmProjects/pythonProject/Python_validation_code/out.html")
+
+#spark.read.format("avro").load("dbfs:/FileStore/shared_uploads/kattubadinovember2023@gmail.com/SourceFiles/userdata1.avro").show()
 
 
 
