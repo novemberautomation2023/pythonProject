@@ -1,13 +1,13 @@
 '''This file created to practice iterative statements
 Author - Sreeni added date:20/Dec/2023 '''
 
-# ls = [4,5,6,'Sreeni', True]
-# t = (44,55,77,'Raghav', False)
-# d = {1:"Sreeni", 2:"Raghav", 3 :"Mahesh"}
-# s= {7,1,2,3,4,5,5,6,6}
-# fs = frozenset({1,4,5,6,7,7,7,8})
-# r = range(1,10)
-# #df, series, arrays
+ls = [4,5,6,'Sreeni', True]
+t = (44,55,77,'Raghav', False)
+d = {1:"Sreeni", 2:"Raghav", 3 :"Mahesh"}
+s= {7,1,2,3,4,5,5,6,6}
+fs = frozenset({1,4,5,6,7,7,7,8})
+r = range(1,10)
+#df, series, arrays
 #
 # #Syntax for
 #
